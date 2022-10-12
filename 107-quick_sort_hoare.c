@@ -5,7 +5,7 @@
  *@item1: array element
  *@item2: array element
  */
-void swap(int *array, ssize_t item1, ssize_t item2)
+void swap(int *array, size_t item1, size_t item2)
 {
 	int tmp;
 
@@ -50,9 +50,9 @@ int hoare_partition(int *array, int first, int last, int size)
  *@last: last array element
  *@size: array size
  */
-void qs(int *array, ssize_t first, ssize_t last, int size)
+void qs(int *array, size_t first, size_t last, int size)
 {
-	ssize_t position = 0;
+	size_t position = 0;
 
 	if (first < last)
 	{
