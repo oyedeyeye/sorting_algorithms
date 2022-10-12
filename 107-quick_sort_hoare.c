@@ -29,12 +29,10 @@ int hoare_partition(int *array, int first, int last, int size)
 	while (1)
 	{
 
-		do
-		{
+		do {
 			current++;
 		} while (array[current] < pivot);
-		do
-		{
+		do {
 			finder--;
 		} while (array[finder] > pivot);
 		if (current >= finder)
@@ -72,3 +70,4 @@ void quick_sort_hoare(int *array, size_t size)
 		return;
 	qs(array, 0, size - 1, size);
 }
+
